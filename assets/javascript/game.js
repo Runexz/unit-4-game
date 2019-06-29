@@ -47,13 +47,21 @@ $(document).ready(function() {
     }
 
     // function to add to wins, then send wins to html, then use reset function
-    function addWon() {
+    function addLoss() {
         alert ("You went over the number!");
         losses++;
         $('#numberLosses').text(losses);
         reset();
     }
-    // addWon(); testing successful
+    // addLoss(); testing successful
+
+    function addWin() {
+        alert ("You gathered the right amount of GEMS!");
+        wins++;
+        $('#numberWins').text(wins);
+        reset();
+    }
+    // addWin(); testing successful
 
 
 });
