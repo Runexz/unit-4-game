@@ -64,6 +64,6 @@ $(document).ready(function() {
     }
     // addWin(); testing successful
 
-
+    // need to add the on click function for each gem that will add the random number associated plus user total
 
 });
