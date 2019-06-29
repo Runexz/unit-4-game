@@ -46,7 +46,7 @@ $(document).ready(function() {
         $('#finalTotal').text(userTotal);
     }
 
-    // function to add to wins, then send wins to html, then use reset function
+    // function to add to losses, then send loss to html, then use reset function
     function addLoss() {
         alert ("You went over the number!");
         losses++;
@@ -55,6 +55,7 @@ $(document).ready(function() {
     }
     // addLoss(); testing successful
 
+    // function to add to wins, then send wins to html, then use reset function
     function addWin() {
         alert ("You gathered the right amount of GEMS!");
         wins++;
@@ -63,5 +64,6 @@ $(document).ready(function() {
     }
     // addWin(); testing successful
 
+    
 
 });
