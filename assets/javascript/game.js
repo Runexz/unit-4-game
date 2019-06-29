@@ -4,11 +4,11 @@
 $(document).ready(function() {
     
     // create a variable that will hold the random number 19-120 and test with console.log
-    var Random = Math.floor(Math.random()*101+19)
-    console.log("This is the computer number", Random);
+    var cpuNum = Math.floor(Math.random()*101+19)
+    console.log("This is the computer number", cpuNum);
 
     // link id that is in html to this variable to display in html the random number
-    $('#randomNumber').text(Random);
+    $('#computerNumber').text(cpuNum);
     
     // create a bunch of variables that will create random numbers 1-12 and used for the gems and test with console.log
     var red1 = Math.floor(Math.random()*11+1)
@@ -30,27 +30,27 @@ $(document).ready(function() {
     var losses = 0;
 
     // links the html id to js variables
-    $('#numberWins').text(wins);
-    $('#numberLosses').text(losses);
+    $('#numWins').text(wins);
+    $('#numLosses').text(losses);
 
     // function to reset computers random number, gems numbers, users total gem amount
     function reset() {
         Random=Math.floor(Math.random()*101+19);
         console.log(Random)
-        $('#randomNumber').text(Random);
+        $('#computerNumber').text(Random);
         red1= Math.floor(Math.random()*11+1);
         blue2= Math.floor(Math.random()*11+1);
         yellow3= Math.floor(Math.random()*11+1);
         green4= Math.floor(Math.random()*11+1);
         userTotal= 0;
-        $('#finalTotal').text(userTotal);
+        $('#gemTotal').text(userTotal);
     }
 
     // function to add to losses, then send loss to html, then use reset function
     function addLoss() {
         alert ("You went over the number!");
         losses++;
-        $('#numberLosses').text(losses);
+        $('#numLosses').text(losses);
         reset();
     }
     // addLoss(); testing successful
@@ -59,11 +59,11 @@ $(document).ready(function() {
     function addWin() {
         alert ("You gathered the right amount of GEMS!");
         wins++;
-        $('#numberWins').text(wins);
+        $('#numWins').text(wins);
         reset();
     }
     // addWin(); testing successful
 
-    
+
 
 });
