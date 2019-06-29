@@ -35,9 +35,9 @@ $(document).ready(function() {
 
     // function to reset computers random number, gems numbers, users total gem amount
     function reset() {
-        Random=Math.floor(Math.random()*101+19);
-        console.log(Random)
-        $('#computerNumber').text(Random);
+        random=Math.floor(Math.random()*101+19);
+        console.log(random)
+        $('#computerNumber').text(random);
         red1= Math.floor(Math.random()*11+1);
         blue2= Math.floor(Math.random()*11+1);
         yellow3= Math.floor(Math.random()*11+1);
@@ -65,5 +65,11 @@ $(document).ready(function() {
     // addWin(); testing successful
 
     // need to add the on click function for each gem that will add the random number associated plus user total
+
+    $('#ruby').on('click',function(){
+        userTotal = userTotal + red1;
+
+    })
+
 
 });
