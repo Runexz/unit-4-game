@@ -48,6 +48,12 @@ $(document).ready(function() {
 
     // function to add to wins, then send wins to html, then use reset function
     function addWon() {
-
+        alert ("You went over the number!");
+        losses++;
+        $('#numberLosses').text(losses);
+        reset();
     }
+    // addWon(); testing successful
+
+
 });
