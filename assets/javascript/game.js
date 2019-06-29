@@ -15,13 +15,13 @@ $(document).ready(function() {
     console.log("This is ruby number", red1);
 
     var blue2 = Math.floor(Math.random()*11+1)
-    console.log("This is sapphire number", red1);
+    console.log("This is sapphire number", blue2);
 
     var yellow3 = Math.floor(Math.random()*11+1)
-    console.log("This is amber number", red1);
+    console.log("This is amber number", yellow3);
 
     var green4 = Math.floor(Math.random()*11+1)
-    console.log("This is emerald number", red1);
+    console.log("This is emerald number", green4);
     // console log works on the above
 
     // create variables for what the current users amount selected and wins/losses
@@ -39,9 +39,13 @@ $(document).ready(function() {
         console.log(cpuNum)
         $('#computerNumber').text(cpuNum);
         red1= Math.floor(Math.random()*11+1);
+        console.log("This is ruby number", red1);
         blue2= Math.floor(Math.random()*11+1);
+        console.log("This is sapphire number", blue2);
         yellow3= Math.floor(Math.random()*11+1);
+        console.log("This is amber number", yellow3);
         green4= Math.floor(Math.random()*11+1);
+        console.log("This is emerald number", green4);
         userTotal= 0;
         $('#gemTotal').text(userTotal);
     }
@@ -83,5 +87,55 @@ $(document).ready(function() {
         }
     })
 
+    // replicate ruby button but replace with the correct gems and variables. could a function do this?
+    $('#sapphire').on ('click', function(){
+        userTotal = userTotal + blue2;
+        console.log ("add userTotal= " + userTotal);
+        // works adds user total which was 0 + userTotal
+        // adds user totals to html gemTotal id
+        $('#gemTotal').text(userTotal);
+
+        // if statements if the user amount equals the computer number addWin function should be called
+        if (userTotal == cpuNum) {
+            addWin();
+        }
+        // if the user amount is greater than computer number addLoss function should be called
+        else if (userTotal > cpuNum) {
+            addLoss();
+        }
+    })
+    // Yellow button works
+    $('#amber').on ('click', function(){
+        userTotal = userTotal + yellow3;
+        console.log ("add userTotal= " + userTotal);
+        // works adds user total which was 0 + userTotal
+        // adds user totals to html gemTotal id
+        $('#gemTotal').text(userTotal);
+
+        // if statements if the user amount equals the computer number addWin function should be called
+        if (userTotal == cpuNum) {
+            addWin();
+        }
+        // if the user amount is greater than computer number addLoss function should be called
+        else if (userTotal > cpuNum) {
+            addLoss();
+        }
+    })
+    $('#emerald').on ('click', function(){
+        userTotal = userTotal + green4;
+        console.log ("add userTotal= " + userTotal);
+        // works adds user total which was 0 + userTotal
+        // adds user totals to html gemTotal id
+        $('#gemTotal').text(userTotal);
+
+        // if statements if the user amount equals the computer number addWin function should be called
+        if (userTotal == cpuNum) {
+            addWin();
+        }
+        // if the user amount is greater than computer number addLoss function should be called
+        else if (userTotal > cpuNum) {
+            addLoss();
+        }
+    });
 
 });
