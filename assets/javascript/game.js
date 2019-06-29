@@ -35,9 +35,9 @@ $(document).ready(function() {
 
     // function to reset computers random number, gems numbers, users total gem amount
     function reset() {
-        random=Math.floor(Math.random()*101+19);
-        console.log(random)
-        $('#computerNumber').text(random);
+        cpuNum=Math.floor(Math.random()*101+19);
+        console.log(cpuNum)
+        $('#computerNumber').text(cpuNum);
         red1= Math.floor(Math.random()*11+1);
         blue2= Math.floor(Math.random()*11+1);
         yellow3= Math.floor(Math.random()*11+1);
@@ -65,10 +65,22 @@ $(document).ready(function() {
     // addWin(); testing successful
 
     // need to add the on click function for each gem that will add the random number associated plus user total
-
-    $('#ruby').on('click',function(){
+    // on click function to connect with ruby html id
+    $('#ruby').on ('click', function(){
         userTotal = userTotal + red1;
+        console.log ("add userTotal= " + userTotal);
+        // works adds user total which was 0 + userTotal
+        // adds user totals to html gemTotal id
+        $('#gemTotal').text(userTotal);
 
+        // if statements if the user amount equals the computer number addWin function should be called
+        if (userTotal == cpuNum) {
+            addWin();
+        }
+        // if the user amount is greater than computer number addLoss function should be called
+        else if (userTotal > cpuNum) {
+            addLoss();
+        }
     })
 
 
