@@ -28,11 +28,12 @@ $(document).ready(function() {
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
+    var gemResult = 0;
 
     // links the html id to js variables
     $('#numWins').text(wins);
     $('#numLosses').text(losses);
-
+    $('#gemTotal').text(gemResult);
     // function to reset computers random number, gems numbers, users total gem amount
     function reset() {
         cpuNum=Math.floor(Math.random()*101+19);
