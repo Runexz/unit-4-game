@@ -7,5 +7,73 @@
     margin-right: 100px;
 } */
 body {
-    background-color: aquamarine;
+    background-image: url(../../assets/images/gold2.jpg);
+}
+
+.crystalTitle {
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sentences {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: bisque;
+    color: green;
+}
+
+.break {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.numbers {
+    background-color: green;
+    color: purple;
+    width: 25%;
+    margin: 10px;
+    padding-bottom: 80px;
+    float: left;
+}
+
+.scoreboard {
+    background-color: aqua;
+    width: 15%;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+.gems {
+    background-color: white;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    clear: both;
+}
+
+.userTotal {
+    background-color: rgb(1, 100, 131);
+    color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.total {
+    background-color: rgb(1, 100, 131);
+    color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 10px 0 50px 10px;
 }
