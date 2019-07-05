@@ -6,10 +6,15 @@
 /* .marContainer {
     margin-right: 100px;
 } */
+
+/* all colors are based on the homework image.  should I just use my own
+css colors and backgrounds? */
+/* Background image for the page is all gold coins! */
 body {
     background-image: url(../../assets/images/gold2.jpg);
 }
 
+/* for crystal collector orange background white letters */
 .crystalTitle {
     width: 350px;
     margin-top: 10px;
@@ -21,6 +26,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* background for the instructions should be beige? and text green */
 .sentences {
     width: 50%;
     margin-top: 10px;
@@ -31,11 +37,13 @@ body {
     color: green;
 }
 
+/* spacing around each sentence. Maybe an easier way to do this */
 .break {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* computer numbers should be purple and backround green */
 .numbers {
     background-color: green;
     color: purple;
@@ -45,6 +53,7 @@ body {
     float: left;
 }
 
+/* wins and losses text should stay black and background aqua? */
 .scoreboard {
     background-color: aqua;
     width: 15%;
@@ -54,6 +63,7 @@ body {
     float: left;
 }
 
+/* gems background white */
 .gems {
     background-color: white;
     width: 40%;
@@ -62,6 +72,7 @@ body {
     clear: both;
 }
 
+/* background should be teal with white text */
 .userTotal {
     background-color: rgb(1, 100, 131);
     color: white;
@@ -70,6 +81,7 @@ body {
     padding: 10px;
 }
 
+/* background should be teal with white text */
 .total {
     background-color: rgb(1, 100, 131);
     color: white;
